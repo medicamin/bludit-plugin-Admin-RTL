@@ -1,0 +1,6 @@
+{
+  "plugin-data": {
+    "name": "Admin RTL",
+    "description": "Loads an RTL stylesheet for the Bludit administration area."
+  }
+}

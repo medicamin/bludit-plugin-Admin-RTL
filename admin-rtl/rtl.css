@@ -1,0 +1,205 @@
+/* =========================================================
+   Bludit Admin RTL
+   Bludit 3.22
+   ========================================================= */
+
+@font-face {
+  font-family: VazirmatnED;
+  src: url("./fonts/Vazirmatn-RD-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: vazirmatnED;
+}
+
+/* ---------------------------------------------------------
+   Sidebar
+   --------------------------------------------------------- */
+li.nav-item.mb-4 {
+  gap: 10px;
+}
+
+div.sidebar .nav-item h4 {
+  font-size: 1.2rem;
+}
+
+div.sidebar .nav-item a:hover {
+  transform: translateX(-3px);
+}
+
+/* ---------------------------------------------------------
+   Dropdowns
+   --------------------------------------------------------- */
+
+.dropdown-menu {
+	text-align: right;
+}
+
+.dropdown-item {
+	text-align: right;
+	padding: .15rem 0.5rem;
+}
+
+#jseditorSidebar {
+	right: auto;
+	left: 15px;
+}
+
+/* ---------------------------------------------------------
+   Font Awesome icons
+   --------------------------------------------------------- */
+
+.fa {
+  margin-right: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+.quick-search-trigger .fa,
+.quick-search-header .fa-search,
+.actionsDropdown .dropdown-item i.fa {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* ---------------------------------------------------------
+   Buttons
+   --------------------------------------------------------- */
+
+.btn {
+  direction: rtl;
+  margin: 0 1px;
+}
+
+.float-right {
+  float: left !important;
+}
+
+.custom-file-label::after {
+  left: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+  right: unset;
+}
+
+.page-item:first-child .page-link {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.page-item:last-child .page-link {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+/* ---------------------------------------------------------
+   Alerts
+   --------------------------------------------------------- */
+
+#alert {
+  right: auto;
+  left: 20px;
+}
+
+/* ---------------------------------------------------------
+   Content management
+   --------------------------------------------------------- */
+
+.mr-3 {
+  margin-left: 1rem;
+  margin-right: 0px !important;
+  display: inline-block;
+}
+
+.ml-2,
+.mx-2 {
+  margin-right: 0.5rem;
+}
+
+/* ---------------------------------------------------------
+   Tables
+   --------------------------------------------------------- */
+
+td.child {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+th,
+td {
+  font-size: 0.9rem !important;
+}
+
+.profilePicture {
+    margin-right: 0 !important;
+    margin-inline-end: .25rem;
+}
+
+/* ---------------------------------------------------------
+   Login form
+   --------------------------------------------------------- */
+.login-card .form-check-label {
+  padding-right: 25px;
+}
+
+.btn-login svg {
+  transform: scale(-1, 1);
+  margin-right: 8px;
+}
+
+/* ---------------------------------------------------------
+   Keep inherently LTR content LTR
+   --------------------------------------------------------- */
+
+code,
+pre,
+.contentURL,
+.input-icon-wrapper .form-control,
+input[type="url"],
+input[type="email"] {
+  direction: ltr;
+  text-align: left;
+}
+
+td.contentURL {
+  direction: ltr;
+  text-align: right;
+}
+
+input,
+textarea,
+select,
+.form-control,
+.custom-select {
+  unicode-bidi: plaintext;
+  direction: rtl;
+}
+
+/* ---------------------------------------------------------
+   Other Stuff unrelated to RTL
+   --------------------------------------------------------- */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-weight: var(--font-weight-bold);
+}
+
+html,
+.metric-card-list {
+  scrollbar-color: #efefef #fff;
+  scrollbar-width: thin;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 5rem;
+  }
+      .contentTools .btn {
+        font-size: 14px !important;
+    }
+}
